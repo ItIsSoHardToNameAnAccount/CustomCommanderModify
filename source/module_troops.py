@@ -2779,8 +2779,8 @@ upgrade(troops,"swadian_crossbowman","swadian_sharpshooter")
 # upgrade2(troops,"swadian_skirmisher","swadian_crossbowman","swadian_infantry")
 upgrade(troops,"swadian_novice_horseman","swadian_noble_lad")
 upgrade2(troops,"swadian_noble_lad","swadian_lancer","swadian_man_at_arms") 
-#upgrade(troops,"swadian_lancer","swadian_knight")
-#upgrade(troops,"swadian_man_at_arms","swadian_knight")
+upgrade(troops,"swadian_lancer","swadian_knight")
+upgrade(troops,"swadian_man_at_arms","swadian_knight")
 ## CC
 
 upgrade(troops,"vaegir_recruit","vaegir_footman")
@@ -2797,8 +2797,8 @@ upgrade(troops,"vaegir_novice_horseman","vaegir_noble_lad")
 upgrade2(troops,"vaegir_noble_lad","vaegir_lancer","vaegir_horseman")
 # upgrade2(troops,"vaegir_archer","vaegir_marksman","vaegir_warrior")
 # upgrade2(troops,"vaegir_infantry","vaegir_guard","vaegir_warrior")
-#upgrade(troops,"vaegir_lancer","vaegir_knight")
-#upgrade(troops,"vaegir_horseman","vaegir_knight")
+upgrade(troops,"vaegir_lancer","vaegir_knight")
+upgrade(troops,"vaegir_horseman","vaegir_knight")
 ## CC
 
 upgrade(troops,"khergit_tribesman","khergit_skirmisher")
@@ -2818,7 +2818,7 @@ upgrade(troops,"nord_archer","nord_veteran_archer")
 # upgrade2(troops,"nord_archer","nord_veteran_archer","nord_warrior")
 ## CC
 upgrade(troops,"nord_warrior","nord_veteran")
-#upgrade(troops,"nord_veteran","nord_champion")
+upgrade(troops,"nord_veteran","nord_champion")
 
 
 upgrade2(troops,"rhodok_tribesman","rhodok_spearman","rhodok_crossbowman") ## CC
@@ -2831,7 +2831,7 @@ upgrade(troops,"rhodok_trained_crossbowman","rhodok_veteran_crossbowman") #new 1
 # upgrade2(troops,"rhodok_trained_crossbowman","rhodok_veteran_crossbowman","rhodok_veteran_spearman")
 ## CC
 upgrade(troops,"rhodok_veteran_spearman","rhodok_sergeant")
-#upgrade(troops,"rhodok_veteran_crossbowman","rhodok_sharpshooter")
+upgrade(troops,"rhodok_veteran_crossbowman","rhodok_sharpshooter")
 
 upgrade(troops,"sarranid_recruit","sarranid_footman")
 upgrade2(troops,"sarranid_footman","sarranid_veteran_footman","sarranid_skirmisher")
@@ -2845,8 +2845,8 @@ upgrade(troops,"sarranid_archer","sarranid_master_archer")
 # upgrade2(troops,"sarranid_skirmisher","sarranid_archer","sarranid_infantry")
 upgrade(troops,"sarranid_novice_horseman","sarranid_noble_lad")
 upgrade2(troops,"sarranid_noble_lad","sarranid_lancer","sarranid_horseman")
-#upgrade(troops,"sarranid_lancer","sarranid_mamluke")
-#upgrade(troops,"sarranid_horseman","sarranid_mamluke")
+upgrade(troops,"sarranid_lancer","sarranid_mamluke")
+upgrade(troops,"sarranid_horseman","sarranid_mamluke")
 ## CC
 
 
