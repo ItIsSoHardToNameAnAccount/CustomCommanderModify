@@ -6606,7 +6606,7 @@ scripts = [
       ## CC
       
       #KEEBUR - 13 Routes
-      #Sargoth, Thir, Veluca, Suno, Jelkala, Praven, Uxkhal£¬ Reyvadin, Halmar, Dhirim, Shariz
+      #Sargoth, Thir, Veluca, Suno, Jelkala, Praven, Uxkhalï¿½ï¿½ Reyvadin, Halmar, Dhirim, Shariz
       ## CC
       (call_script, "script_set_trade_route_between_centers", "p_town_23", "p_town_24"), #Betazim
       (call_script, "script_set_trade_route_between_centers", "p_town_23", "p_town_27"), #Lathow Bay
@@ -57771,9 +57771,9 @@ scripts = [
         (this_or_next|eq, ":skill_no", skl_power_strike),
         (eq, ":skill_no", skl_ironflesh),
         (assign, ":skill_limit", 15),
-      (else_try),
-        (eq, ":skill_no", skl_surgery),
-        (assign, ":skill_limit", 4),
+      #(else_try),
+        #(eq, ":skill_no", skl_surgery),
+        #(assign, ":skill_limit", 4),
       (else_try),
         (assign, ":skill_limit", 10),
       (try_end),
@@ -57905,8 +57905,9 @@ scripts = [
             (store_random_in_range, ":rand", 0, 100),
             (lt, ":rand", ":ironflesh_level"),
             (assign, ":is_wounded", 1),
-          # (else_try),
-            # (agent_get_party_id, ":agent_party_id", ":dead_agent_no"),
+          (else_try),
+            (agent_get_party_id, ":agent_party_id", ":dead_agent_no"),
+            (eq, ":agent_party_id", "p_main_party"),
             # (assign, ":continue", 0),
             # (try_begin),
               # (eq, ":agent_party_id", "p_main_party"), # belongs to player's party
@@ -57917,12 +57918,12 @@ scripts = [
               # (assign, ":continue", 1),
             # (try_end),
             # (eq, ":continue", 1),
-            # (party_get_skill_level, ":surgery_level", "p_main_party", "skl_surgery"),
+            (party_get_skill_level, ":surgery_level", "p_main_party", "skl_surgery"),
             # (val_min, ":surgery_level", 14),
-            # (val_mul, ":surgery_level", 3),
-            # (store_random_in_range, ":rand_2", 0, 100),
-            # (lt, ":rand_2", ":surgery_level"),
-            # (assign, ":is_wounded", 1),
+            (val_mul, ":surgery_level", 3),
+            (store_random_in_range, ":rand_2", 0, 100),
+            (lt, ":rand_2", ":surgery_level"),
+            (assign, ":is_wounded", 1),
             # (assign, ":result", 2),
           (try_end),
         (try_end),

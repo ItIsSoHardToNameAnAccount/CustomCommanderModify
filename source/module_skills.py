@@ -59,7 +59,7 @@ skills = [
   ("trade","Trade", sf_base_att_cha|sf_inactive,10,"Every level of this skill reduces your trade penalty by 5%%. (Party skill) Max level: 10"),
   ("engineer","Engineer",sf_base_att_int|sf_effects_party,10,"This skill allows you to construct siege equipment and fief improvements more efficiently. (Party skill) Max level: 10"),
   ("first_aid", "First Aid",sf_base_att_int|sf_effects_party,10,"Heroes regain 6%% per skill level of hit-points lost during mission. (Party skill) Max level: 10"), 
-  ("surgery","Surgery",sf_base_att_int|sf_effects_party,4,"Each point to this skill gives a 4%% chance that a mortally struck party member will be wounded rather than killed. (Party skill) Max level: 10"),   
+  ("surgery","Surgery",sf_base_att_int|sf_effects_party,10,"Each point to this skill gives a 4%% chance that a mortally struck party member will be wounded rather than killed. (Party skill) Max level: 10"),   
   ("wound_treatment","Wound Treatment",sf_base_att_int|sf_effects_party,10,"Party healing speed is increased by 20%% per level of this skill. (Party skill) Max level: 10"), 
   ("inventory_management","Inventory Management",sf_base_att_int|sf_inactive,10,"Increases inventory capacity by +6 (Party skill). Max level: 10"), 
   ("spotting","Spotting",sf_base_att_int|sf_effects_party,10,"Each point to this skill increases party seeing range by 10%%. (Party skill) Max level: 10"),
